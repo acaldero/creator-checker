@@ -20,10 +20,10 @@
 * 🗂️ `docker/` – Contains Docker-related configuration files.
 * 🗂️ `submissions/` – Student submissions organized by group.
 * 🗂️ `tests/` – Test programs and reference solutions.
-* 🗂️ `results/` – Evaluation results and grades.
 * 🗂️ `scripts/` – Correction scripts:
   * 📄 `s10_unzip.sh` – Unzips group submissions.
   * 📄 `s20_checker.sh` – Executes tests for a specified group.
+* 🗂️ `results/` – Evaluation results and grades.
 
 ---
 
@@ -53,7 +53,8 @@
    ```
 
 4. **Prepare test files:**
-   Replace the example test files in the `tests/` directory with your target correction test suite. See [`CREATOR Wiki - Validating program execution`](https://creatorsim.github.io/creator-wiki/teaching-resources/validator.html).
+   Replace the example test files in the `tests/` directory with your target correction test suite. <br>
+   See [`CREATOR Wiki - Validating program execution`](https://creatorsim.github.io/creator-wiki/teaching-resources/validator.html).
 
 5. **Add student submissions:**
    Place the student submission files (`*.zip`) inside the `submissions/` directory.
@@ -73,3 +74,9 @@
    ```bash
    ./creator_checker.sh stop
    ```
+
+9. **See results at:**
+   ```bash
+   firefox ./results/<group_name>/index_<group_name>.html
+   ```
+
